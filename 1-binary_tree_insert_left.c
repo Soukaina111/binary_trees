@@ -10,13 +10,13 @@
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
     binary_tree_t *nnode;
+    nnode = binary_tree_node(parent, value);
 
     if (parent == NULL)
     {
         return (NULL);
     }
 
-    nnode = binary_tree_node(parent, value);
     if (nnode == NULL)
     {
         return (NULL);
