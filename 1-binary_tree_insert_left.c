@@ -21,7 +21,9 @@ nnode->right = NULL;
 nnode->left = parent->left;
 parent->left = nnode;
 if (nnode->left != NULL)
-	nnode->left->parent = nnode;
+{
+nnode->left->parent = nnode;
+}
 return (nnode);
 }
 }
