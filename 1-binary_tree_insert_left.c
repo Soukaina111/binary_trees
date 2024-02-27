@@ -1,6 +1,8 @@
 #include "binary_trees.h"
 /**
- * binary_tree_insert_left -starts a function that inserts a node as the left-child of another node regarding the state of the parent if it is available or not
+ * binary_tree_insert_left -starts a function that inserts a node as 
+ * the left-child of another node regarding the state
+ * of the parent if it is available or not
  * @parent: Pointer to the node to insert the left-child in
  * @value: Value to store in the creatd nocd
  *
@@ -10,7 +12,7 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
     if (parent == NULL)
     {
-        return (NULL);  /* Return NULL if parent is NULL */
+        return (NULL);
     }
 
     binary_tree_t *nnode = malloc(sizeof(binary_tree_t));
