@@ -1,10 +1,7 @@
 #ifndef B_T_H
 #define B_T_H
-
 #include <stdlib.h>
 #include <stdio.h>
-
-
 
 /**
  * struct binary_tree_s - Binary tree node
