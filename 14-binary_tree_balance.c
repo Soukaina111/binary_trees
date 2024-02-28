@@ -6,8 +6,8 @@
  */
 int haut(const binary_tree_t *tree) {
     if (tree == NULL)
-        return 0;
-    return 1 + max(haut(tree->left), haut(tree->right));
+        return (0);
+    return (1 + max(haut(tree->left), haut(tree->right)));
 }
 
 /**
@@ -15,8 +15,9 @@ int haut(const binary_tree_t *tree) {
  * @tree: Pointer to the root node of the binary tree
  * Return: The balance factor of the binary tree
  */
-int binary_tree_balance(const binary_tree_t *tree) {
+int binary_tree_balance(const binary_tree_t *tree) 
+{
     if (tree == NULL)
-        return 0;
-    return haut(tree->left) - haut(tree->right);
+        return (0);
+    return (haut(tree->left) - haut(tree->right));
 }
