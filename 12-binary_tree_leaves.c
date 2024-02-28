@@ -8,22 +8,22 @@
  */
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
-    size_t gauche_leaves;
-    size_t droit_leaves;
+size_t gauche_leaves;
+size_t droit_leaves;
 
-    if (tree == NULL)
-    {
-        return (0);
-    }
-
-    if (tree->left == NULL && tree->right == NULL)
-    {
-        return (1);
-    }
-
-    gauche_leaves = binary_tree_leaves(tree->left);
-    droit_leaves = binary_tree_leaves(tree->right);
-
-    return (gauche_leaves + droit_leaves);
+if (tree == NULL)
+{
+return (0);
+}
+if (tree->left == NULL && tree->right == NULL)
+{
+return (1);
+}
+else
+{
+gauche_leaves = binary_tree_leaves(tree->left);
+droit_leaves = binary_tree_leaves(tree->right);
+return (gauche_leaves + droit_leaves);
+}
 }
 
