@@ -17,8 +17,8 @@ int binary_tree_haut(const binary_tree_t *tree)
 	{
 		if (tree)
 		{
-			gauche = tree->gauche ? 1 + binary_tree_haut(tree->gauche) : 1;
-			droit = tree->droit ? 1 + binary_tree_haut(tree->droit) : 1;
+			gauche = tree->gauche ? 1 + binary_tree_haut(tree->left) : 1;
+			droit = tree->droit ? 1 + binary_tree_haut(tree->right) : 1;
 		}
 		return ((gauche > droit) ? gauche : droit);
 	}
@@ -35,11 +35,12 @@ int binary_tree_balance(const binary_tree_t *tree)
 	int gauche = 0;
         int droit = 0;
         int BF = 0;
-	if (tree != NULL)
-	{
-		gauche = (binary_tree_haut(tree->gauche));
-		droit = (binary_tree_haut(tree->droit));
-		BF = gauche - droit;
-	}
-	return (BF);
+
+if (tree != NULL)
+{
+gauche = (binary_tree_haut(tree->left));
+droit = (binary_tree_haut(tree->right));
+BF = gauche - droit;
+}
+return (BF);
 }
