@@ -14,5 +14,5 @@ return (NULL);
 else
 {
 return (node->parent == node->parent->parent->left ?
-node->parent->parent->right : node->parent->parent->left);
+		node->parent->parent->right : node->parent->parent->left);
 }
