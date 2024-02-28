@@ -7,14 +7,17 @@
  */
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
-	if (tree == NULL)
-		return (0);
+	size_t gauche_prof;
+	size_t droit_prof;
 
-	if (tree->left == NULL && tree->right == NULL)
-		return (1);
-
-	size_t gauche_prof = binary_tree_depth(tree->left);
-	size_t droit_prof = binary_tree_depth(tree->right);
-
-	return (gauche_prof > droit_prof ? gauche_prof + 1 : droit_prof + 1);
+if (tree == NULL)
+{
+	return (0);
+}
+else
+{
+gauche_prof = binary_tree_depth(tree->left);
+droit_prof = binary_tree_depth(tree->right);
+return (gauche_prof > droit_prof ? gauche_prof + 1 : droit_prof + 1);
+}
 }
