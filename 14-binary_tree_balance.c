@@ -3,7 +3,6 @@
 /**
  * binary_tree_height - Calculates the height of a binary tree.
  * @tree: Pointer to the root node of the tree.
- *
  * Return: Height of the binary tree.
  */
 int binary_tree_height(const binary_tree_t *tree)
@@ -30,6 +29,7 @@ return (1 + max_height);
  * @tree: Pointer to the root node of the tree.
  * Return: Balance factor of the binary tree.
  */
+
 int binary_tree_balance(const binary_tree_t *tree)
 {
 int gauche_height;
