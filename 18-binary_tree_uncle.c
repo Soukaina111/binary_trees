@@ -11,7 +11,7 @@ if (node == NULL || node->parent == NULL)
 {
 return (NULL);
 }
-if( node->parent->parent == NULL)
+if ( node->parent->parent == NULL)
 {
 return (NULL);
 }
